@@ -23,14 +23,14 @@ public interface IElementoAB<T> {
 
     /**
      * Asigna el hijo izquierdo del nodo.
-     *
-     * @return Elemento a ser asignado como hijo izquierdo.
+     * @param elemento
      */
     public void setHijoIzq(TElementoAB<T> elemento);
 
     /**
      * Asigna el hijo derecho del nodo.
      *
+     * @param elemento
      * @return Elemento a ser asignado como hijo derecho.
      */
     public void setHijoDer(TElementoAB<T> elemento);
@@ -42,8 +42,6 @@ public interface IElementoAB<T> {
      * @return Elemento encontrado. En caso de no encontrarlo, retorna nulo.
      */
     public TElementoAB<T> buscar(Comparable unaEtiqueta);
-
- 
 
     /**
      * Inserta un elemento dentro del arbol.
@@ -81,11 +79,10 @@ public interface IElementoAB<T> {
      */
     public T getDatos();
 	
-	 /**
+    /**
      * Elimina un elemento dada una etiqueta.
      * @param unaEtiqueta
      * @return 
      */
     public TElementoAB eliminar(Comparable unaEtiqueta);
-
 }

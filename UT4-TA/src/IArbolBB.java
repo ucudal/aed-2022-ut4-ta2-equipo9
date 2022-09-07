@@ -7,10 +7,7 @@ public interface IArbolBB<T> {
      * @param unElemento Elemento a insertar
      * @return Exito de la operacián
      */
-
     public boolean insertar(TElementoAB<T> unElemento);
-
- 
 
     /**
      * Busca un elemento dentro del árbol.
@@ -49,8 +46,4 @@ public interface IArbolBB<T> {
      * @param unaEtiqueta 
      */
     public void eliminar(Comparable unaEtiqueta);
-
-	
-	
 }
-
