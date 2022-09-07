@@ -1,3 +1,4 @@
+
 public class TArbolBB<T> implements IArbolBB<T> {
 
     private TElementoAB<T> raiz;
@@ -19,19 +20,28 @@ public class TArbolBB<T> implements IArbolBB<T> {
     @Override
     public TElementoAB<T> buscar(Comparable unaEtiqueta) {
         TElementoAB<T> Resultado = null;
-        if (raiz =! null)
-            Resultado = raiz.buscar (unaEtiqueta);
+        if (raiz != null) {
+            Resultado = raiz.buscar(unaEtiqueta);
+        }
         return Resultado;
     }
-    
+
     @Override
     public String preOrden() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        if (raiz != null) {
+            return null;
+        } else {
+            return raiz.preOrden;
+        }
     }
 
     @Override
     public String inOrden() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        if (raiz != null) {
+            return null;
+        } else {
+            return raiz.inOrden;
+        }
     }
 
     @Override
@@ -44,4 +54,4 @@ public class TArbolBB<T> implements IArbolBB<T> {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-       }
+}
